@@ -7,9 +7,9 @@ class Authors extends Component {
 
     let authors = ''
 
-    if (this.props.authors.length > 0) {
+    if (this.props.authors !== undefined) {
       authors = this.props.authors.map(author => <li key={author.id}>{author.authorName}</li>);
-    } 
+    }
 
     return (
       <div>
