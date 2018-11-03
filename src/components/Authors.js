@@ -5,7 +5,13 @@ class Authors extends Component {
 
   render() {
 
-    let authors = this.props.authors.map(author => <li key={author.id}>{author.authorName}</li>);
+    let authors = ''
+
+    if (this.props.authors.length > 0) {
+      authors = this.props.authors.map(author => <li key={author.id}>{author.authorName}</li>);
+    } else {
+      
+    }
 
     return (
       <div>
