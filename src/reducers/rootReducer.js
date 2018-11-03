@@ -1,10 +1,10 @@
-import authorReducer from './authorReducer'
-import bookReducer from './bookReducer'
+import authorsReducer from './authorsReducer'
+import booksReducer from './booksReducer'
 import { combineReducers } from 'redux'
 
 const rootReducer = combineReducers({
-    book: bookReducer,
-    author: authorReducer
+    book: booksReducer,
+    author: authorsReducer
   });
 
 
